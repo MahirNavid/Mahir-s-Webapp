@@ -1,0 +1,12 @@
+{% extends "template.html" %}
+
+{% block ticker %}
+    <header class="header">
+        <h1>Ticker details</h1>
+    </header>
+    <main class="main">
+        <h2>Selected Ticker: {{ ticker }}</h2>
+        <h2><a href="https://finance.yahoo.com/quote/{{ ticker }}">{{ name }}</a></h2>
+        <h2>Current Price: ${{ price }}</h2>
+    </main>
+{% endblock %}
