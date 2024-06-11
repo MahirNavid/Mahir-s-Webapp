@@ -1,6 +1,25 @@
-# Current Deliverable: 2x Design Pictures
-## First Picture: 
-Given a stock ticker, show the ticker symbol, full name, and price of that srock on a single screen.
+# Mahir's Webapp
 
-## Second Picture: 
-Given an unknown number of available stock tickers, show a paginated table of stocks 10 at a time where the table lists the ticker. if you click on the ticker, you will be taken to the page for the first picure.
+This Webapp is a flask application that displays a stock ticker information using the 'yfinance' library
+- Display a list of several tickers
+- Clicking on an individual ticker will display more information about the ticker
+
+## Installation and Instructions
+1. Clone the repository
+   ```bash
+   git clone https://github.com/MahirNavid/Mahir-s-Webapp.git
+   ```
+2. Install required packages
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. cd into repository
+   ```bash
+   cd Mahir-s-Webapp
+   ```
+4. Run Flask
+   ```bash
+   flask run
+   ```
+5. click on link to view webapp
+   
