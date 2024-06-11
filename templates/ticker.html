@@ -1,0 +1,5 @@
+<ul class="list">
+    {% for item in ticker %}
+        <li class="list__item"><a class="link" href="/ticker_details?ticker={{ item }}">{{ item }}</a></li>
+    {% endfor %}
+</ul>
