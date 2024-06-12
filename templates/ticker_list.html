@@ -1,0 +1,21 @@
+{% extends "template.html" %}
+
+{% block tickerlist %}
+
+    <section class="main">
+        <ul class="list">
+            {% for item in ticker %}
+                <li class="list__item"><a class="link" href="/ticker_details?ticker={{ item }}">{{ item }}</a></li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section class="pagination">
+        <a class="link" href="#">&laquo;</a>
+        {% for item in page %}
+            <a class="link" href="/ticker_list?page={{ item }}">{{ item }}</a>
+        {% endfor %}
+        <a class="link" href="#">&raquo;</a>
+    </section>
+
+{% endblock %}
