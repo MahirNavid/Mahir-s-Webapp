@@ -12,7 +12,7 @@
   ```bash
   python3 --version
   ```
-## Installation and Setup on Mac and Linux
+## Installation and Setup on MacOS and Linux
 1. Clone the repository
    ```bash
    git clone https://github.com/MahirNavid/Mahir-s-Webapp.git
