@@ -8,6 +8,10 @@
 - 
 ## Prerequisites
 - Python 3.12.2
+- Check your python version:
+  ```bash
+  python3 --version
+  ```
 ## Installation and Setup on Mac and Linux
 1. Clone the repository
    ```bash
