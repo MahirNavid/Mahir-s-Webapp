@@ -17,7 +17,7 @@ This Webapp is a flask application that displays a stock ticker information usin
    ```
 3. Create a virtual Environment
    ```bash
-   source venv/bin/activate
+   python -m venv .venv
    ```
 4. Install requirements
    ```bash
