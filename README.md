@@ -1,8 +1,10 @@
 # Mahir's Webapp
 
-This Webapp is a flask application that displays a stock ticker information using the 'yfinance' library
-- Display a list of several tickers
+## Features
+- This Webapp is a flask application that displays a stock ticker information using the 'yfinance' library
+- Displays a paginated list of several tickers
 - Clicking on an individual ticker will display more information about the ticker
+
 - 
 ## Prerequisites
 - Python 3.12.2
