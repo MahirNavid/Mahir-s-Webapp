@@ -5,7 +5,7 @@ This Webapp is a flask application that displays a stock ticker information usin
 - Clicking on an individual ticker will display more information about the ticker
 - 
 ## Prerequisites
-- Python3
+- Python 3.12.2
 ## Installation and Setup on Mac and Linux
 1. Clone the repository
    ```bash
