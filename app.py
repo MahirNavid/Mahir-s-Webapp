@@ -34,5 +34,3 @@ def ticker_details():
     ticker_price = ticker_info['currentPrice']
     ticker_name = ticker_info['longName']
     return render_template("ticker_details.html", ticker=selected_ticker, price=ticker_price, name=ticker_name)
-
-#HELLO HELLO TEST TEST!1111

@@ -1,0 +1,18 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "Mahir's Webapp"
+version = "0.1.0"
+description = "view stock ticker details"
+authors = [
+    {name = "Mahir Navid", email = "m.navid@obscuritylabs.com"},
+]
+dependencies = [
+    "flask>=3.0.3",
+    "yfinance>=0.2.40",
+    "pytickersymbols>=1.15.0",
+]
+requires-python = "=>3.10.*"
+readme = "README.md"
