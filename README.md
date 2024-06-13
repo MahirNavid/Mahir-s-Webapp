@@ -21,9 +21,12 @@
    ```bash
    cd Mahir-s-Webapp
    ```
-3. Create a virtual Environment
+3. Create and activiate virtual Environment
    ```bash
    python -m venv .venv
+   ```
+   ```bash
+   source venv/bin/activate
    ```
 4. Install requirements
    ```bash
