@@ -11,11 +11,11 @@
     </section>
 
     <section class="pagination">
-        <a class="link" href="#">&laquo;</a>
+        <a class="link" href="/ticker_list?page=1">&laquo;</a>
         {% for item in page %}
             <a class="link" href="/ticker_list?page={{ item }}">{{ item }}</a>
         {% endfor %}
-        <a class="link" href="#">&raquo;</a>
+        <a class="link" href="/ticker_list?page=3">&raquo;</a>
     </section>
 
 {% endblock %}
