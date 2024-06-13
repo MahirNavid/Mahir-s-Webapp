@@ -18,11 +18,21 @@ def index():
 
 @app.route("/ticker_list")
 def ticker_list():
-    test = request.args.get('page', 1, type=int)
-    upper = test*10
+    factor = request.args.get('page', 1, type=int)
+    upper = factor*10
     lower = upper-10
     ticker=TICKER[lower:upper]
-    return render_template("ticker_list.html", ticker=ticker, page=PAGE, test=test)
+
+    ticker_price = []
+    ticker_name = []
+
+    for symbol in ticker:
+        ticker_data = yf.Ticker(symbol)
+        ticker_info = ticker_data.info
+        ticker_price.append(ticker_info.get('currentPrice'))
+        ticker_name.append(ticker_info.get('longName'))
+
+    return render_template("ticker_list.html", ticker=ticker, page=PAGE, price=ticker_price, name=ticker_name)
 
 # https://github.com/ranaroussi/yfinance/tree/main
 

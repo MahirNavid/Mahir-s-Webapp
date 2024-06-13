@@ -36,21 +36,26 @@
 .main {
     text-align: center;
     margin-bottom: 1rem;
-    padding: 2rem;
-}
-
-.list {
-    list-style-type: none;
-}
-
-.list__item {
-    font-size: 2rem;
+    padding: 1rem;
 }
 
 .link {
     color: green;
     text-decoration: none;
     font-size: 2rem;
+}
+
+.table {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.table th, .table td {
+    font-size: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd; /* Border style for table cells */
+    padding: 12px; /* Padding inside table cells */
 }
 
 .link__url {

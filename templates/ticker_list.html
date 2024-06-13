@@ -2,12 +2,25 @@
 
 {% block tickerlist %}
 
-    <section class="main">
-        <ul class="list">
-            {% for item in ticker %}
-                <li class="list__item"><a class="link" href="/ticker_details?ticker={{ item }}">{{ item }}</a></li>
-            {% endfor %}
-        </ul>
+    <section class="list-container">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Ticker</th>
+                    <th>Name</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for item in ticker %}
+                <tr>
+                    <td><a href="/ticker_details?ticker={{ item }}">{{ item }}</a></td>
+                    <td>{{ name[loop.index0] }}</td>
+                    <td>${{ price[loop.index0] }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
     </section>
 
     <section class="pagination">
