@@ -28,9 +28,9 @@
    ```bash
    source venv/bin/activate
    ```
-4. Install requirements
+4. Install dependencies
    ```bash
-   pip install -r requirements.txt
+   pip install .
    ```
 6. Run Flask
    ```bash
